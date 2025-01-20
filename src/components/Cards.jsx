@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import Single from "../../public/single.png";
-import Double from "../../public/Double.png";
-import Triple from "../../public/Triple.png";
+// import Single from "../../public/single.png";
+// import Double from "../../public/Double.png";
+// import Triple from "../../public/Triple.png";
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ imgSrc, planName, price, features, unavailableFeatures }) => {
@@ -64,28 +64,27 @@ const Card = ({ imgSrc, planName, price, features, unavailableFeatures }) => {
 const Cards = () => {
     const plans = [
         {
-            imgSrc: Single,
+            imgSrc: '/single.png', // Corrected path
             planName: "Standard Plan",
             price: 49,
             features: ["2 team members", "20GB Cloud storage", "Integration help"],
             unavailableFeatures: ["Sketch Files"],
         },
         {
-            imgSrc: Double,
+            imgSrc: '/double.png', // Corrected path
             planName: "Premium Plan",
             price: 99,
             features: ["5 team members", "50GB Cloud storage", "Priority support"],
             unavailableFeatures: ["Advanced Reports"],
         },
         {
-            imgSrc: Triple,
+            imgSrc: '/triple.png', // Corrected path
             planName: "Enterprise Plan",
             price: 199,
             features: ["Unlimited team members", "1TB Cloud storage", "24/7 Support"],
             unavailableFeatures: [],
         },
     ];
-
     return (
         <div className="w-full py-40 pr-20 px-10 justify-between items-center mx-auto bg-white">
             <div className="text-center grid justify-center md:grid-cols-3 gap-6 ">
